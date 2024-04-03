@@ -81,10 +81,21 @@ class _BookingDetailsState extends State<BookingDetails> {
              children: [
                  Icon(Icons.local_shipping,
                  size: 50,),
-               Text("Truck Type - ")
+               Padding(
+                 padding: EdgeInsets.only(left: 40),
+                 child: Text("Truck Type - Box Truck",
+                 style: TextStyle(fontWeight: FontWeight.bold),),
+               )
              ],
            ),
-         )
+         ),
+         const SizedBox(height: 10,),
+          const Padding(
+            padding: EdgeInsets.only(right: 200),
+            child: Text("Price   - ₹10000",
+            style: TextStyle(fontSize: 20,
+            fontWeight: FontWeight.bold),),
+          ),
         ],
       ),
     );
